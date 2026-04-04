@@ -12,7 +12,7 @@ const projects = [
       "Website portfolio pribadi yang dibuat menggunakan React untuk menampilkan profil dan project.",
     tech: ["React", "CSS", "Vite"],
     github: "https://github.com/Hyjaayyy/portfolio",
-    demo: "", // nanti isi setelah deploy
+    demo: "https://portofolio-vijay.vercel.app", 
   },
   {
     id: "2",
