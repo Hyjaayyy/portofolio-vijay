@@ -1,16 +1,16 @@
 import portfolioImg from "../assets/portfolio.png";
 import figmaImg from "../assets/figma.png";
-import pufftradeImg from "../assets/pufftrade.png";
+import pufftradeImg from "../assets/yabeetracker.png";
 
 const projects = [
   {
     id: "1",
     title: "Website Portfolio",
     image: portfolioImg,
-    desc: "Portfolio pribadi menggunakan React",
+    desc: "Portfolio pribadi",
     description:
       "Website portfolio pribadi yang dibuat menggunakan React untuk menampilkan profil dan project.",
-    tech: ["React", "CSS", "Vite"],
+    tech: ["React", "CSS", "Vite", "MongoDB"],
     github: "https://github.com/Hyjaayyy/portfolio",
     demo: "https://portofolio-vijay.vercel.app", 
   },
@@ -18,7 +18,7 @@ const projects = [
     id: "2",
     title: "UI/UX Design PuffTrade",
     image: figmaImg,
-    desc: "Design aplikasi di Figma",
+    desc: "Design aplikasi Figma",
     description:
       "Design UI/UX aplikasi PuffTrade yang dibuat menggunakan Figma.",
     tech: ["Figma"],
@@ -27,14 +27,14 @@ const projects = [
   },
   {
     id: "3",
-    title: "PuffTrade Web",
+    title: "YABEE Habit Tracker",
     image: pufftradeImg,
     desc: "Project di GitHub",
     description:
-      "Project PuffTrade yang sudah diimplementasikan dan tersedia di GitHub.",
-    tech: ["JavaScript", "HTML", "CSS"],
-    github: "https://github.com/Hyjaayyy/PuffTrade",
-    demo: "", // nanti isi kalau sudah deploy
+      "HYJAAYYY Habit Tracker adalah aplikasi web interaktif yang dirancang untuk membantu pengguna membangun kebiasaan secara konsisten melalui fitur streak tracking, visualisasi aktivitas (heatmap), dan pengalaman pengguna yang modern.",
+    tech: ["NextJs", "React", "Tailwind CSS"],
+    github: "https://github.com/Hyjaayyy/YabeeTracker",
+    demo: "https://yabee-tracker.vercel.app/", 
   },
 ];
 

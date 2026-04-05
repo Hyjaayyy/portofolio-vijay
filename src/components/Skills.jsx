@@ -1,25 +1,13 @@
 import {
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaGitAlt,
-  FaUsers,
-  FaComments,
-  FaLightbulb,
-  FaClock,
-  FaBrain
+  FaReact, FaHtml5, FaCss3Alt, FaJs, FaGitAlt,
+  FaUsers, FaComments, FaLightbulb, FaClock, FaBrain
 } from "react-icons/fa";
 
-import {
-  SiVite,
-  SiTailwindcss,
-  SiFigma
-} from "react-icons/si";
+import { SiVite, SiTailwindcss, SiFigma } from "react-icons/si";
 
 function Skills() {
   return (
-    <section className="skills" id="skills">
+    <section className="skills" id="skills" data-aos="fade-left">
       <h2>Skills & Expertise</h2>
 
       <div className="skill-group">

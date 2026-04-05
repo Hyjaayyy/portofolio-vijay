@@ -7,7 +7,7 @@ import { SiReact } from "react-icons/si";
 
 function About() {
   return (
-    <section className="about" id="about">
+    <section className="about" id="about" data-aos="fade-right">
       <h2>About Me</h2>
 
       <img src={profile} alt="profile" className="about-img" />
@@ -16,7 +16,7 @@ function About() {
         Halo, saya <strong>Vijay Anjar Pratama</strong>, mahasiswa Sistem Informasi 
         yang berfokus pada pengembangan <span>Frontend</span> dan <span>UI/UX</span>. 
         Saya tertarik membangun tampilan web yang modern, responsif, dan nyaman digunakan.
-        
+
         <br /><br />
 
         Sebagai mahasiswa Sistem Informasi, saya menyadari bahwa sebuah sistem 

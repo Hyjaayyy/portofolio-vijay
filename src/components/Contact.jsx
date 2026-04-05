@@ -30,7 +30,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact" id="contact"> {/* ✅ FIX DI SINI */}
+    <section 
+      className="contact" 
+      id="contact"
+      data-aos="zoom-in"  // ✅ AOS DI SINI
+    >
       <h2>Contact Me</h2>
 
       <form ref={form} onSubmit={sendEmail} className="form">

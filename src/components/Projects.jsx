@@ -5,7 +5,7 @@ function Projects() {
   const navigate = useNavigate();
 
   return (
-    <section id="projects">
+    <section id="projects" data-aos="zoom-in-up">
       <h2>My Projects</h2>
 
       <div className="project-list">
@@ -15,11 +15,7 @@ function Projects() {
             className="card"
             onClick={() => navigate(`/project/${project.id}`)}
           >
-            <img
-              src={project.image}
-              alt={project.title}
-              style={{ width: "100%", borderRadius: "10px" }}
-            />
+            <img src={project.image} alt={project.title} />
             <h3>{project.title}</h3>
             <p>{project.desc}</p>
           </div>

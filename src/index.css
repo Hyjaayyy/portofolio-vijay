@@ -210,26 +210,69 @@ section {
 }
 
 /* PROJECT */
+.projects {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
 .project-list {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
-  flex-wrap: wrap;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(8px);
-  border-radius: 12px;
-  padding: 20px;
-  width: 250px;
-  border: 1px solid rgba(255,255,255,0.08);
-  transition: 0.3s ease;
+  background: #111;
+  border-radius: 14px;
+  padding: 12px;
+  cursor: pointer;
+  transition: All 0.3s ease;
+  overflow: hidden
+}
+
+.card img {
+  width: 100%;
+  height: 180px; 
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  opacity: 0.7;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 15px rgba(0,255,255,0.3);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(255, 0, 0, 0.25);
+}
+
+.card:active {
+  transform: scale(0.97);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: linear-gradient(120deg, transparent, rgba(255,0,0,0.3), transparent);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card {
+  position: relative;
 }
 
 /* CONTACT */
@@ -761,4 +804,26 @@ section {
   background: #ff4d4d;
   color: white;
   box-shadow: 0 0 15px #ff4d4d;
+}
+
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(255, 0, 0, 0.3);
+}
+
+.btn-demo {
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-demo:hover {
+  background: darkred;
+  transform: scale(1.05);
 }
